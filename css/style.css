@@ -1,0 +1,160 @@
+
+@font-face {
+    font-family: "dream";
+    src: url("../font/well Regular.ttf");
+  }
+  ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+*{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #4C6123;
+    font-family: "dream";
+
+}
+#Main_container{
+    float :left;
+    width: 100%;
+    height: 800px;
+}
+#Main_container .bg{
+    float :left;
+    width: 100%;
+}
+#navbar_container{
+    position: fixed;
+    z-index: 2;
+    top:0px;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+#navbar_container .shop{
+    margin-right: 50px;
+}
+#navbar_container .search,.mypage,.shop{
+margin-left: 5%;
+
+float:right;
+}
+#navbar_container img{
+    width: 30px;
+    margin-top: 25px;
+}
+.menu_bar{
+    padding-left: 30px ;
+    float:left;
+}
+
+#Recotext_container{
+    float :left;
+    width: 100%;
+    height: 200px;
+}
+#Recotext_container h1{
+    text-align: center ;
+    font-size: 50px;
+}
+#Reco_container{
+    width: 90%;
+    height: 500px;
+    background-color: black;
+
+}
+.Reco_inner{
+
+    float:left;
+    width: 25%;
+    height: 100%;
+
+}
+.Reco_inner img{
+    width: 100%;
+    height: 65%;
+}
+
+#Gifttext_container{
+    float: left;
+    width: 100%;
+    height: 200px;
+}
+#Gifttext_container h1{
+    text-align: center ;
+    font-size: 50px;
+}
+.Gift_box {
+    float: left;
+    position: relative; 
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 200px;
+}
+
+#Gift_container{
+
+    position: absolute;
+    float :left;
+    width: 2400px;
+    height: 500px;
+    transition: 0.5s ease-out;
+
+}
+
+.Gift_inner{
+    float:left;
+    width: 300px;
+    height: 100%;
+    margin-left: 100px;
+}
+
+.Gift_inner img{
+    width: 100%;
+    height: 65%;
+}
+.prev{
+    left: 50px;
+
+}
+.next{
+    right: 50px;
+}
+.controller span{
+    font-size: 50px;
+    position: absolute;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 20px;
+    top: 25%;
+    cursor: pointer;
+}
+#coinfo-container{
+    float: left;
+    height: 140px;
+    width: 100%;
+    background-color: #AAC779;
+  }
+  .coinfoinner img{
+    display: block;
+    width: 60px;
+    margin: 10px auto 0px auto;
+  }
+  .coinfoinner p{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 10px;
+    color: white;
+  }
+
+
