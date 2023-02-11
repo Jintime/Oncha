@@ -5,6 +5,7 @@ class UserStorage{
     id : ["jin","나개발","진타임"],
     password : ["1234","1234","123"],
     name:["진타임","나개발","진이"],
+    email : ["wlstjd73@naver.com","wlstjd854@naver.com","wlstjd7391@gmail.com"]
 };
 
 static getUsers(...fields){
@@ -17,7 +18,7 @@ static getUsers(...fields){
     },{});
     return newUsers;
  }
- 
+
  static getUserInfo(id){
     const users =this.#users;
     const idx =users.id.indexOf(id);
