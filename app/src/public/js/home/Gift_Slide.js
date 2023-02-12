@@ -1,3 +1,5 @@
+"use strict";
+
 let Slide = document.querySelector("#Gift_container");
 let SlideImage = document.querySelectorAll("#Gift_container li");
 
