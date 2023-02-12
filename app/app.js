@@ -3,6 +3,9 @@
 //모듈
 const express = require('express');
 const bodyParser =require("body-parser");
+const datenv = require("dotenv");
+datenv.config();
+
 const app = express();
 
 
