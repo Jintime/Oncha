@@ -9,7 +9,7 @@ class UserStorage{
       const query ="SELECT*FROM users WHERE id=?;";
           db.query(query,[id],(err,data)=>{
             if(err) reject(`${err}`);
-            resolve(data[0]);
+            else resolve(data[0]);
       });
     });
  }
@@ -22,7 +22,7 @@ class UserStorage{
             [userInfo.id,userInfo.username,userInfo.password,userInfo.email],
             (err)=>{
             if(err) reject(`${err}`);
-            resolve({success:true});
+            else resolve({success:true});
       });
     });
  }
