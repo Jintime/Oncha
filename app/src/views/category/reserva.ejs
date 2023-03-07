@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>예약 취소 및 예약 정보 조회</title>
+  </head>
+  <body>
+    <h1>예약 취소 및 예약 정보 조회</h1>
+    <h2>예약 취소하기</h2>
+    <form method="POST" action="/api/cancel">
+      <label for="id">예약 ID</label>
+      <input type="number" id="id" name="id" required><br>
+      <input type="submit" value="예약 취소하기">
+    </form>
+    <h2>예약 정보 조회하기</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>장소</th>
+          <th>날짜</th>
+          <th>시간</th>
+          <th>이름</th>
+          <th>이메일</th>
+          <th>예약 시간</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% reservations.forEach((reservation) => { %>
+          <tr>
+            <td><%= reservation.id %></td>
+            <td><%= reservation.place %></td>
+            <td><%= reservation.date %></td>
+            <td><%= reservation.time %></td>
+            <td><%= reservation.name %></td>
+            <td><%= reservation.email %></td>
+            <td><%= reservation.created_at %></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </body>
+</html>

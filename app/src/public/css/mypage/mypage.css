@@ -1,0 +1,169 @@
+*{
+  box-sizing: border-box;
+}
+
+#navId {
+  list-style: none;
+}
+
+#navP {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 37.5px;
+  margin-bottom: 30px;
+}
+
+.form1 input:active {
+  border: 0;
+  transform: translateY(2.5px);
+}
+
+.navbutton1:active {
+  border: 0;
+  transform: translateY(2.5px);
+}
+
+.form1 input:hover {
+  color: #aac779;
+  background-color: #f9f9f9;
+  
+}
+
+.navbutton1:hover {
+  color: #aac779;
+  background-color: #f9f9f9;
+}
+.form1 input{  font-size: 17px;
+  padding: 12px;
+  border: 0.5px solid gray;
+  border-bottom: 0px;
+  letter-spacing: 1px;
+  background-color: transparent;
+  width: 200PX;
+  height: 50px;
+  text-align: left;
+}
+
+.navbutton1 {
+  font-size: 17px;
+  padding: 12px;
+  border-top: 0px;
+  border: 0.5px solid gray;
+  letter-spacing: 1px;
+  background-color: transparent;
+  width: 200PX;
+  height: 50px;
+  text-align: left;
+}                         
+/* 여기까지 네비게이션바 */
+
+.form1{
+  float: left;
+  width: 20%;
+}
+.form2 {
+  float: left;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+#PersonalInformation {
+  font-size: 25px;
+  font-weight: bold;;
+  margin-bottom: 25px;
+}
+
+.check {
+  width: 120px;
+  height: 45px;
+  margin-left: 10px;
+  color: #aac779;
+  background-color: transparent;
+  border: solid 1px #aac779;
+  border-radius: 3px;
+}
+
+.check:active {
+  border: 0;
+  transform: translateY(2.5px);
+}
+
+ul{
+  list-style: none;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 7px;
+  width: 300px;
+  height: 45px;
+  border: solid 1px gray;
+  border-radius: 3px;
+}
+
+.write {
+  font-size: large;
+  display: inline-block; 
+  width: 150px;
+  margin-right: 0px;
+}
+
+#line {
+  border-bottom: 1px solid #000000;
+}
+
+#button1 {
+  border-radius: 9999px;
+  margin-top: 30px;
+  padding: 7px;
+}
+
+#choose {
+  color: gray;
+}
+
+#see {
+  color: #aac779;
+  margin-left: 20px;
+}
+
+strong {
+  color: rgb(219, 219, 219);
+}
+
+.line2 {
+  border-bottom: 1px solid #000000;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+#checkBox1 {
+  margin-top: 20px;
+  margin-left: 200px;
+}
+#checkBox2 {
+  margin-left: 80px;
+}
+
+.line3{
+  border-bottom: rgb(230, 230, 230) solid 1px;
+  margin-top: 30px;
+}
+.out {
+  width: 120px;
+  height: 45px;
+  color: #aac779;
+  background-color: transparent;
+  border: solid 1px #aac779;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  border-radius: 3px;
+}
+.out:active {
+  border: 0;
+  transform: translateY(2.5px);
+}
+.outbutton {
+  margin-left: 165px;
+}

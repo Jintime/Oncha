@@ -1,0 +1,58 @@
+@import url(../template/template.css);
+.view{
+
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.order_main_info{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.inner_info li{
+    font-size: 20px;
+    padding: 20px 80px 50px 0px;
+    border-bottom: 0.5px solid;
+}
+.main_img{
+    margin-left: 10%;
+    width: 50%;
+}
+.main_img img{
+    margin-top: 100px;
+    width: 100%;
+}
+.inner_info{
+    margin-right: 10%;
+    width: 50%;
+}
+.button_panel{
+    text-align: center;
+    width: 100%;
+    height: 100px;
+}
+.button_panel button{
+  text-align: center;
+   border: 1px solid;
+   width: 20%;
+   height: 100%;
+}
+.info,.detail,.review,.inquiry{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    text-align: center;
+    white-space:pre-line;
+}
+.review,.inquiry{
+    width: 80%;
+    text-align: left;
+}
+.review_borad,.inquiry_board{
+    text-align: center;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 50px;
+}

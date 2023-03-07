@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판</title>
+    <link rel="stylesheet" href="/css/board/css.css">
+    <script src="js/board/write.js"defer></script>
+</head>
+<body>
+    <div class="board_wrap">
+        <div class="board_title">
+            <strong>제품 등록</strong>
+            <p>제품을 등록할수있는 공간입니다.</p>
+        </div>
+        <div class="board_write_wrap">
+            <div class="board_write">
+                <div class="title">
+                    <dl>
+                        <dt>제품 이름</dt>
+                        <dd><input class="tilte" type="text" placeholder="제품 이름"></dd>
+                    </dl>
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>글쓴이</dt>
+                      <dd id="userid"><%=data[0].id %></dd>
+                    </dl>
+                    <dl>
+                        <dt>희망가격</dt>
+                        <dd><input  class="price" type="text" placeholder="가격 입력"> </dd>
+                    </dl>
+                    <input type="file" id="fileUpload" accept='image/jpeg,image/gif,image/png'>
+                </div>
+                <div class="cont">
+                    <textarea class="content" placeholder="내용 입력"></textarea>
+                </div>
+            </div>
+            <div class="bt_wrap">
+                <button  class="on">등록</button>
+                <a>취소</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

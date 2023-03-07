@@ -1,0 +1,406 @@
+
+@font-face {
+    font-family: "dream";
+    src: url("../font/well Regular.ttf");
+  }
+  ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+*{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #4C6123;
+    font-family: "dream";
+}
+#onchaInfo{
+    float: left;
+    
+    height: 500px;
+    margin-bottom: 150px;
+}
+
+.info_video{
+    border-radius: 10%;
+    margin-top: 150px;
+    margin-left: 15%;
+    float: left;
+    width: 30%;
+}
+#onchaInfo h1{
+    float: left;
+    width: 30%;
+    margin-top: 250px;
+    margin-left: 5%;
+}
+
+#check-btn2:hover .menubars{ display: block; } 
+.menubars{
+    display: none;
+    list-style: none;
+    margin-left: 230px ;
+    position: absolute;
+    background-color: white;
+    margin-top: 50px;
+    width: 200px;
+}
+.menubars li{
+    padding:20px 0;
+}
+
+.menubars li:hover{
+    display: block;
+  background-color: gray;
+}
+button{
+    all: unset;
+}
+.login_bt{
+    padding-top: 30px;
+    float: left;
+    width: 100%;
+    height: 100px;
+
+}
+.talk_bar{
+    visibility: hidden;
+    background-color:rgb(249, 255, 240);
+    border-radius: 5%;
+    z-index: 3;
+    display: block;
+    width: 300px;
+    height: 200px;
+    margin-left: 80%;
+    margin-top: 400px;
+    position: fixed;
+}
+.talk_bar h1{
+    color: black;
+    font-size: 20px;
+}
+.talk_bar .ask{
+    
+    width: 290px;
+    margin-top: 150px;
+}
+#Talk{
+    z-index: 2;
+    display: block;
+    margin-left: 92%;
+    margin-top: 650px;
+    position: fixed;
+}
+#Talk button{
+    width: 100px;
+    height: 100px;
+}
+#Talk img{
+    width: 100px;
+}
+.login_bt .top_search{
+    margin-left: 10%;
+    float: left;
+    width: 300px;
+    height: 40px;
+}
+.login_bt img{
+    margin-left: 15%;
+    width: 100px;
+    float: left;
+}
+.login_bt h2 {
+    margin-left: 5%;
+    float: left;
+}
+.login_bt .CS{
+    margin-right: 10%;
+}
+.login_bt button{
+    margin-right: 2%;
+    float : right;
+}
+
+.login_bt .t_search_bt{
+    float: left;
+}
+.t_search_bt img {
+    width: 40px;
+}
+
+.category{
+    text-decoration: none;
+    margin-left: 10px;
+    margin-top: 22px;
+    float: left;
+    font-size: 25px;
+}
+.n_category{
+    text-decoration: none;
+    margin-left: 10px;
+    margin-top: 15px;
+    float: left;
+    font-size: 25px;
+}
+#menu_box{
+    float: left;
+    z-index: 2;
+    top:130px;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+#menu_box .newitem,.bestitem,.sale{
+    float: left;
+    width: 150px;
+    height: 50px;
+    margin-left: 7%;
+    margin-top: 10px;
+}
+#menu_box .mypage{
+    margin-right: 10%;
+}
+#menu_box .search,.mypage,.shop{
+margin-left: 5%;
+
+float:right;
+}
+
+#menu_box img{
+    width: 30px;
+    margin-top: 25px;
+}
+.menu_bar{
+    padding-left: 250px ;
+    float:left;
+}
+.navmenu_bar{
+    padding-left: 250px ;
+    float:left;
+}
+#navbar_container .nav_search{
+    margin-left: 1%;
+    height: 20px;
+
+}
+#navbar_container .nav_sbt{
+    width: 20px;
+}
+
+
+#navbar_container{
+    z-index: 3;
+    top: 0px;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+#navbar_container.drop {
+    visibility: visible;
+    position: fixed;
+    animation: dropHeader 0.3s;
+  }
+  @keyframes dropHeader {
+    0% {
+      top: -5rem;
+    }
+    100% {
+      top: 0;
+    }
+  }
+#navbar_container .mypage{
+    margin-right: 10%;
+}
+#navbar_container .search,.mypage,.shop{
+    margin-left: 5%;
+    float:right;
+}
+
+#navbar_container .n_newitem,.n_bestitem,.n_sale{
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 5%;
+}
+#navbar_container img{
+    width: 30px;
+    margin-top: 20px;
+}
+
+#Main_container .bg{
+    height: 800px;
+    width: 100%;
+}
+#Main_container{
+    float :left;
+    width: 100%;
+    height: 800px;
+}
+#Recotext_container{
+    float :left;
+    width: 100%;
+    height: 200px;
+}
+#Recotext_container h1{
+    text-align: center ;
+    font-size: 50px;
+}
+#Reco_container{
+    width: 90%;
+    height: 500px;
+
+}
+.Reco_inner{
+    float:left;
+    width: 20%;
+    margin-left: 10%;
+    height: 100%;
+
+}
+.Reco_inner img{
+    width: 100%;
+    height: 65%;
+}
+
+#Gifttext_container{
+    float: left;
+    width: 100%;
+    height: 200px;
+}
+#Gifttext_container h1{
+    text-align: center ;
+    font-size: 50px;
+}
+#gift{
+    position: relative; 
+    float: left;
+    width: 100%;
+    height: 500px;
+}
+.Gift_box {
+    float: left;
+    overflow: hidden;
+    position: relative; 
+    z-index: 1;
+    width: 65%;
+    height: 500px;
+   margin-left: 17%;
+    margin-bottom: 200px;
+}
+
+#Gift_container{
+
+    position: absolute;
+    float :left;
+    width: 2400px;
+    height: 500px;
+    transition: 0.5s ease-out;
+
+}
+
+.Gift_inner{
+    list-style: none;
+    float:left;
+    width: 300px;
+    height: 100%;
+    margin-left: 100px;
+}
+
+.Gift_inner img{
+    width: 100%;
+    height: 65%;
+}
+.prev{
+    left: 200px;
+
+}
+.next{
+    right: 200px;
+}
+.controller span{
+    z-index: 2;
+    font-size: 50px;
+    position: absolute;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 20px;
+    top: 25%;
+    cursor: pointer;
+}
+#coinfo-container{
+    float: left;
+    height: 140px;
+    width: 100%;
+    background-color: #AAC779;
+  }
+  .coinfoinner img{
+    display: block;
+    width: 60px;
+    margin: 10px auto 0px auto;
+  }
+  .coinfoinner p{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 10px;
+    color: white;
+  }
+
+
+.slideShow_container{
+    margin: 100px 0;
+    float: left;
+    width: 100%;
+    height: 600px;
+  }
+.slideFade{
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 60%;
+}
+.slideFade img {
+    border-radius: 5%;
+}
+.resev_main{
+    margin-left: 15px;
+    float: left;
+    width: 50%;
+}
+.map{
+    float: left;
+    width: 45%;
+    height: 265px; 
+}
+.resev_inner{
+    float: left;
+    width: 15%;
+}
+.innre_info{
+    height: 200px;
+    float: left;
+}
+.ad_container{
+    float: left;
+    position: relative;
+    height: 200px;
+    width: 100%;
+}
+.ad_container img{
+
+    width: 70%;
+    height: 200px;
+}
+.ad_container h1{
+    color: white;
+    margin-top: -100px;
+}

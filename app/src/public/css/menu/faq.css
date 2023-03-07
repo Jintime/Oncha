@@ -1,0 +1,123 @@
+@import url(../template/template.css);
+
+.form1{
+  display: block;
+  float: left;
+  width: 20%;
+}
+
+.form2 {
+  display: block;
+  float: left;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.question_title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#question {
+  color: gray;
+  font-size: small;
+  margin-left: 15px;
+}
+
+#select {
+  margin-left: 130px;
+}
+
+select {
+  width: 130px;
+  height: 45px;
+  font-size: large;
+  background-color: transparent;
+  color: #aac779;
+  border: #aac779 solid 1px;
+  border-radius: 2px;
+}
+
+.line {
+  border-bottom: solid black 2px;
+  width: 800px;
+  margin-top: 20px;
+}
+
+.list{
+  margin-top: 20px;
+}
+
+#num {
+  margin-left: 20px;
+}
+
+#gori {
+  margin-left: 80px;
+}
+
+#title {
+  margin-left: 250px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: medium;  
+}
+
+.content {
+  background-color: transparent;
+  width: 700px;
+  height: auto;
+  text-align: start;
+  white-space: pre-line;
+}
+
+button:hover {
+  background-color: #f9f9f9;
+}
+
+.form2 button {
+  background-color: transparent;
+  width: 800px;
+  height: 50px;
+  border: solid 1px black;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+button:active {
+  border: 0;
+  transform: translateY(2.5px);
+}
+
+
+.title_num {
+  display: block;
+  float: left;
+  width: 60px;
+}
+
+.title_category {
+  display: block;
+  float: left;
+  text-align: left;
+  width: 100px;
+  padding-left: 62px;
+  padding-right: 60px;
+}
+
+.faq {
+  width: 700px;
+}
+
+article {
+  float: left;
+  display: none;
+  overflow: hidden;
+}
+  
+.title_title {
+  display: block;
+  float: left;
+}

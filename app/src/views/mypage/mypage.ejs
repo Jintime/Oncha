@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONCHA_MYPAGE1</title>
+  <link rel="stylesheet" href="css/mypage/mypage.css">
+  <script src="js/home/register.js"defer></script>
+</head>
+                        
+<body>
+
+  
+    <form class="form1">
+      <P id="navP">MY ONCHA</p>
+      <ul>
+        <li><input class="mypage" type="button" value="개인 정보 수정"></li>
+        <li><input class="order_history" type="button" value="주문 내역"></li>
+        <li><input class="coupon" type="button" value="적립금/쿠폰"></li>
+        <li><input class="like" type="button" value="찜한 상품"></li>
+        <li><input class="review" type="button" value="상품 후기"></li>
+        <li><input class="inquiry" type="button" value="상품 문의"></li>
+        <li><input class="notification" type="button" value="공지사항"></li>
+        <li><input class="faq" type="button" value="자주하는 질문"></li>
+        <li><input class="csc" type="button" value="1:1일 문의"></li> 
+        <li><input class="navbutton1" type="button" value="제품 등록"></li>
+      </ul>  
+    </form>
+
+    <form class="form2"> 
+
+      <header>
+        <p id="PersonalInformation">개인 정보 수정</p>
+        <div id="line"></div>
+      </header>
+  
+      <div>
+        <span class="write">아이디</span>
+        <label id="user_name"><%=data.id%></label>
+      </div>
+
+      <div>
+        <span class="write">현재 비밀번호</span>
+        <input class="button">
+      </div>
+
+      <div>
+        <span class="write">새 비밀번호</span>
+        <input class="button">
+      </div>
+
+      <div>
+        <span class="write">새 비밀번호 확인</span>
+        <input class="button">
+      </div>
+
+      <div>
+        <span class="write">이름</span>
+        <%=data.username%>
+      </div>
+
+      <div>
+        <span class="write">이메일</span>
+        <%=data.email%>
+        <input class="check" type="button" value="중복확인">
+      </div>
+
+      <div>
+        <span class="write">휴대폰</span>
+        <input class="button">
+        <input class="check" type="button" value="다른번호 인증">
+      </div>
+
+      <div>
+        <span class="write">생년월일</span>
+        <input class="button" type="date">
+      </div>
+
+      <div>
+        <span class="write">선택약관동의</span>
+        <input id="button1" type="checkbox">개인정보 수집・이용 동의<strong>(선택)</strong>
+        <span id="see">약관보기></span> 
+      </div>  
+
+
+      <div class="line2"></div>
+    
+      <footer>
+        <div>
+          <span class="write">이용약관 동의</span>
+          <input type="checkbox">무료배송,할인쿠폰 등 혜택/정보 수신동의<strong>(선택)</strong>
+          <br>
+          <input id="checkBox1" type="checkbox">SMS
+          <input id="checkBox2" type="checkbox">이메일
+        </div> 
+
+        <div class="line3"></div>
+
+        <div class="outbutton">
+          <input class="out" type="button" value="탈퇴하기">
+          <input class="out" type="button" value="회원정보수정">
+        </div>
+      </footer>
+
+    </form>  
+    <script src ="/js/menu/menu_bar.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+@import url(../template/template.css);
+
+.main {
+  border-bottom: solid black 1px;
+}
+
+@font-face {
+  font-family: "dream";
+  src: url("../font/well Regular.ttf");
+}
+*{
+  color: #4C6123;
+  font-family: "dream";
+}
+.form1 {
+  float: left;
+  width: 20%
+}
+.form2 {
+  float: left;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+
+.line {
+    border-bottom: solid black 2px;
+    width: 800px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#title{
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px ;
+  margin-bottom: 38px;
+}
+.titleBox{
+  font-size: medium;
+}
+
+#title_title {
+  padding-left: 250px;
+}
+#title_date {
+  padding-left: 250px;
+  padding-right: 30px;
+}
+
+.q {
+  text-align: center;
+  margin-top: 200px;
+}
