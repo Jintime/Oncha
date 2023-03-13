@@ -22,11 +22,10 @@ class User{
     async adminGetInfo(){
         const client =this.body;
         try{
-        const user= await UserStorage.adminUserInfo(client.id);
-     
+        const user= await UserStorage.adminUserInfo(client.id,);
         if(user){        
          return user;
-      } 
+      }
       return {success:false,msg : "존재하지 않는 아이디입니다."};
      }catch(err){
          return {success :false ,err};

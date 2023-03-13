@@ -47,9 +47,9 @@ class BoardStorage{
 
     static async saveBoarder(info){
         return new Promise((resolve,reject)=>{
-        const query ="INSERT INTO com_board(id,title,detail) VALUES(?,?,?);";
+        const query ="INSERT INTO com_board(id,title,detail,price,image) VALUES(?,?,?,?,?);";
             db.query(query,
-              [info.id,info.title,info.detail],
+              [info.id,info.title,info.detail,info.price,info.image],
               (err)=>{
               if(err) reject(`${err}`);
               else resolve({success:true});

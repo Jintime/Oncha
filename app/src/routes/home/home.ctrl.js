@@ -47,6 +47,9 @@ const output={
       res.render('menu/inquiry');
     },test:(req,res)=>{
       res.render(`order/order`);
+    },write :async (req,res)=>{
+      const data =await check_board(req);
+      return   res.render('board/write',{"data":data});
     }
 
   
@@ -99,7 +102,21 @@ const routeprocess={
       } catch (error) {
         res.status(500).json(error);
       }
+    },admin_re: async (req, res) => {
+      const page = parseInt(req.params.page); // 페이지 번호
+      const user = new User(req.body);
+  
+      const data = await user.adminGetInfo(page);
+ 
+      console.log(data+"1111");
+      res.render('board', { "data": data.user ,"pageCount":data.pageCount});
     },
+      // 데이터베이스 연결 및 쿼리 실행
+      /*connection.query(query, (error, results, fields) => {
+        if (error) throw error;
+        res.render('board', { posts: results });
+      });
+    }),
     /*accessToken : async (req,res)=>{
       const token = req.cookies.accessToken;
       const user =  new User(req.body);
@@ -135,8 +152,18 @@ const routeprocess={
         return res.render("mypage/mypage",{"data":data});
       }else if(response.tag ===`"admin"`){
         const ne = new User(response);
-        const data = await ne.adminGetInfo();
-        return res.render("mypage/admin_page",{"data":data});
+        const page = req.query.page || 1;
+        const data= await ne.adminGetInfo();
+
+        const postsPerPage = 15;
+        const totalPageCount = Math.ceil(data.length / postsPerPage);
+        const startIdx = (page - 1) * postsPerPage;
+        const endIdx = startIdx + postsPerPage;
+        const posts = data.slice(startIdx, endIdx);
+     
+        console.log(page);
+        //console.log(user, pageCount);
+        return res.render("mypage/admin_page",{"data":posts,"totalPageCount":totalPageCount,"currentPage":page});
       }else {
         console.log(response.tag);
       }
@@ -150,6 +177,7 @@ const routeprocess={
       },
       write : async(req,res)=>{
         const board = new Board(req.body);
+
         const rel = await board.board_push();
 
         const url ={
@@ -158,6 +186,7 @@ const routeprocess={
           status : rel.err ? 409:201
         }
 
+
         return res.status(url.status).json(rel);
       },
       adminsite : async(req,res)=>{
@@ -165,7 +194,7 @@ const routeprocess={
         const response = await user.accessToken(req.cookies.accessToken);
         if(response.tag ===`"admin"`){
           const board = new Board(req.body);
-        const data = await board.adminboard_check(req);
+        const data = await board.adminboard_check();
         return res.render('board/admin_board',{"data":data});
       }else if(response.tag ===`"company"`){
         const data = await check_board(req);
@@ -178,12 +207,7 @@ const routeprocess={
       onboard : async(req,res)=>{
 
       },
-      check_auth : async(req,res)=>{
-
-        const user = new User(req.body);
-        const response = await user.accessToken(req.cookies.accessToken);
-
-      }
+    
     
 }
 

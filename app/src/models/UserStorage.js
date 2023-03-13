@@ -13,7 +13,7 @@ class UserStorage{
       });
     });
  }
- 
+ //`SELECT * FROM posts ORDER BY id DESC LIMIT ${offset}, ${perPage}`;
  static adminUserInfo(id){
   return new Promise((resolve,reject)=>{
     const query ="SELECT*FROM users";

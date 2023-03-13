@@ -4,16 +4,29 @@ const { Router } = require('express');
 const express = require('express');
 const router = express.Router();
 const jwt_va =require("../../utils/jwt/jwt_va");
-
-
+const multer = require('multer');
+const path =require("path");
 const ctrl =require('./home.ctrl');
 
+const upload = multer({
+    storage: multer.diskStorage({
+      destination(req, file, done) {
+        done(null, 'src/public/img');
+      },
+      filename(req, file, done) {
+        const ext = path.extname(file.originalname);
+        done(null, path.basename(file.originalname, ext)+ ext);
+      },
+    }),
+    limits: { fileSize: 5 * 1024 * 1024 },
+});
 
 
 router.get('/',ctrl.output.home);
 router.get('/login',ctrl.output.login);
 router.get('/register',ctrl.output.register);
 router.get('/mypage',jwt_va,ctrl.routeprocess.mypage);
+router.get('/write',jwt_va,ctrl.output.write);
 
 router.get('/order',jwt_va,ctrl.output.order);
 router.get('/reservation',jwt_va,ctrl.output.reservation);
@@ -28,7 +41,7 @@ router.get(`/order_test`,jwt_va,ctrl.output.test);
 
 router.post('/login',ctrl.routeprocess.login);
 router.post('/register',ctrl.routeprocess.register);
-router.post('/write',jwt_va,ctrl.routeprocess.write);
+router.post('/write',jwt_va,upload.single("image"),ctrl.routeprocess.write);
 router.get('/logout',jwt_va,ctrl.routeprocess.logout);
 router.get('/comboard',jwt_va,ctrl.routeprocess.comboard);
 router.get('/admin',jwt_va,ctrl.routeprocess.adminsite);

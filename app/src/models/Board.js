@@ -56,7 +56,6 @@ class Board{
      async board_push(){
         const client =this.body;
         try{
-            console.log(client);
         const response = await BoardStorage.saveBoarder(client);
        
         return response;
