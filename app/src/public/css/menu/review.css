@@ -1,0 +1,64 @@
+@import url(../template/template.css);
+
+#main {
+  color: gray;
+}
+
+
+@font-face {
+  font-family: "dream";
+  src: url("../font/well Regular.ttf");
+}
+
+.form1{
+  float: left;
+  width: 20%;
+}
+
+.form2 {
+  float: left;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#main {
+  color: gray;
+}
+
+.button {
+  width: 400px;
+  height: 50px;
+  color: #aacc77;
+  background-color: transparent;
+  border: 1px solid #aacc77;
+  border-radius: 2px;
+}
+
+.button:active {
+  border: 0;
+  transform: translateY(2.5px);
+}
+
+.button:hover {
+  color: #aac779;
+  background-color: #f9f9f9;
+}
+
+#main {
+  color: gray;
+  font-size: small;
+  margin-bottom: 45px;
+  margin-top: 10px;
+}
+
+#Review {
+  text-align: center;
+  margin-top: 175px;
+}
+

@@ -1,0 +1,23 @@
+@import url(../template/template.css);
+
+
+.main_container{
+    float:left;
+    height: 800px;
+    width: 100%;
+    background-color: white;
+}
+.main_container_inner{
+    text-align: center;
+    white-space: pre-line;
+}
+.Info_test_contanier{
+
+    margin: 150px 0px;
+    float: left;
+    width: 100%;
+    height: 200px;
+}
+.Info_test_contanier h1{
+    text-align: center;
+}

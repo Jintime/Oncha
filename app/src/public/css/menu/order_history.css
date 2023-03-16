@@ -1,0 +1,58 @@
+@import url(../template/template.css);
+
+#main {
+  border-bottom: solid black 1px;
+}
+
+
+@font-face {
+  font-family: "dream";
+  src: url("../font/well Regular.ttf");
+}
+*{
+  color: #4C6123;
+  font-family: "dream";
+}
+.form1 {
+  float: left;
+  width: 20%
+}
+.form2 {
+  float: left;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+#olderlist {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#sentence {
+  margin-left: 15px;
+  color: grey;
+  font-size: small;
+}
+#choice {
+  margin-left: 200px;
+}
+select {
+  width: 130px;
+  height: 45px;
+  font-size: large;
+  background-color: transparent;
+  color: #aac779;
+  border: #aac779 solid 1px;
+  border-radius: 2px;
+}
+
+#line {
+  border-bottom: solid black 2px;
+  width: 800px;
+  margin-top: 30px;
+}
+
+#month {
+  text-align: center;
+  margin-top: 260px;
+}

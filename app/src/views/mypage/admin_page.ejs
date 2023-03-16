@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/mypage/admin_page.css">
+</head>
+<body>
+
+
+<aside class="side_bar">
+<div class="logo">관리자 화면</div>
+    <ul>
+        <li><button class="reservation">예약</button></li>
+        <li><button class="member">고객</button></li>
+        <li><button class="board">상품</button></li>
+        <li><button class="coupon">쿠폰</button></li>
+        <li><button class="date">배정</button></li>
+    </ul>
+
+</aside>
+
+<div class="flex_box">
+<div class="top_view">
+<div class="top_view_title">고객</div>
+<div class="top_view_info">안녕하세요 관리자님</div>
+</div>
+
+
+<div class="main_view">
+    <div class="main_view_title">고객 목록</div>
+    <div class="main_view_ctr">
+    </div>
+    <div class="main_view_inner">
+        <div class="inner_title">
+            <span class="check"><input type="checkbox"></span>
+            <span class="user_name">고객명</span>
+            <span class="user_tag">등급</span>
+            <span class="user_email">이메일</span>
+            <span class="user_indate">가입일시</span>
+            <span class="user_brith">생년월일</span>
+            <span class="user_phon">전화번호</span>
+            <span class="user_adress">주소</span>
+        </div>
+
+   
+    
+        <% for(var i = 0; i < data.length; i++) { %>
+        <div class="inner">
+                <span class="check"><input type="checkbox"></span>
+                <span class="user_name"><%=data[i].username%></span>
+                <span class="user_tag"><%=data[i].tag%></span>
+                <span class="user_email"><%=data[i].email%></span>
+                <span class="user_indate"><%=data[i].in_date%></span>
+                <span class="user_brith"><%=data[i].brith%></span>
+                <span class="user_phon"><%=data[i].phon_number%></span>
+                <span class="user_adress"><%=data[i].adress%></span>
+        </div>
+        <% } %>   
+    </div>
+</div>
+ 
+
+<div class="pagination">
+    <a href="#" class="bt first"><<</a>
+    <a href="#" class="bt prev"><</a>
+    <% for (let i = 1; i <= totalPageCount; i++) { %>
+      <a href="/mypage?page=<%= i %>"
+         class="<%= i == currentPage ? 'active' : '' %>">
+        <%= i %>
+      </a>
+    <% } %>
+    <a href="#" class="bt next">></a>
+    <a href="#" class="bt last">>></a><br>
+    <button>승인</button>
+  </div>
+
+
+
+
+
+</body>
+</html>

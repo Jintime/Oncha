@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title >OnCha</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta property="og:title"content="온차">
+  <meta property="og:description"content="세상의 모든 차">
+  <meta property="og:image"content="../img/ot.png">
+  <link rel="icon" href="./img/icon.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="/css/home/style.css" rel="stylesheet"> 
+</head>
+<body>
+    <nav id="navbar_container">
+        <div id="check-btn2" >
+        <label for="check-btn"><img class="navmenu_bar" src="/img/메뉴.png"><a class="n_category" href ="#">카테고리</a></label>
+          <ul class="menubars">
+              <li><button class="order">주문/배송</button></li>
+              <li><button class="reservation">예약</button></li>
+              <li><button class="coupon">적립금/쿠폰</button></li>
+              <li><button class="intro">온차소개</button></li>
+              <li><button class="notification">공지사항</button></li>
+              <li><button class="faq">자주하는질문</button></li>
+              <li><button class="inquiry">고객센터</button></li>
+              <li><button class="mypage2">개인정보수정</button></li>
+          </ul>    
+        </div>
+        <button class="n_newitem"> 신상품 </button>
+        <button class="n_bestitem"> 베스트 </button>
+        <button class="n_sale"> 특가/혜택 </button>
+        <input class="nav_search" type="text" placeholder="검색하기"/>
+        <button  href ="#"><img class="nav_sbt" src="/img/검색.png"></button>
+        <button class="mypage"><img src="/img/로그인_마이페이지.png"></button>
+        <button class="shop" href ="#"><img src="/img/장바구니.png"></button></div>
+        <!--<button class="search" href ="#"><img src="/img/검색.png"></button>
+        <input class="innersearch" type="text" placeholder="검색하기"/>-->
+     
+       
+        </nav>
+        <div class="talk_bar">
+
+            <h1>무엇을 도와드릴까요?</h1>
+            <hr/>
+            <input class="ask" type="text" placeholder="무엇이든 물어보세요."/>
+
+        </div>
+
+    <nav id="Talk">
+       
+        <button class="csc"><img src="/img/상담.png"></button>
+    </nav>
+
+
+
+    <div class="login_bt">
+        <a  href ="#"><img src="/img/logo3.png"></a>
+        <h2>세상의 모든 차</h2>
+        <input class="top_search" type="text" placeholder="검색하기"/>
+        <button class="t_search_bt" href ="#"><img src="/img/검색.png"></button>
+
+        <button class="CS">고객센터</button>
+        <button class="register">회원가입</button>
+        <button class="loginbt">로그인</button>
+    </div>
+     <!--head-->
+     <div id="menu_box">
+        <a class="menu_bar" href ="#"><img src="/img/메뉴.png"></a>
+        <a class="category" href ="#">카테고리</a>
+        <button class="newitem"> 신상품 </button>
+        <button class="bestitem"> 베스트 </button>
+        <button class="sale"> 특가/혜택 </button>
+        <button class="test">테스트</button>
+        <button class="mypage"><img src="/img/로그인_마이페이지.png"></button>
+        <button class="shop" href ="#"><img src="/img/장바구니.png"></button></div>
+        <!--<button class="search" href ="#"><img src="/img/검색.png"></button>
+        <input class="innersearch" type="text" placeholder="검색하기"/>-->
+     
+    
+
+    <div id="Main_container">
+        <!--<video  class="bg" autoplay loop muted preload="auto">
+            <source src="/video/main.mp4" type="video/mp4">
+          </video>-->  
+      <img class="bg" src="/img/bg.jpg">
+
+    </div>
+ <!--body-->
+
+ <div id="onchaInfo">
+    <video class="info_video" autoplay loop muted>
+        <source src="/video/main.mp4" type="video/mp4">
+      </video>
+      <h1>혼자 차를 내려마시기 힘듬<br>온차가 도와줌<br>차를 ~~방법부터 ~~까지</h1>
+</div>
+
+
+ <div class = "ad_container">
+    <img src="/img/ad.jpg">
+    <h1>간단한 광고가 들어갈자리</h1>
+ </div>
+
+
+    <div id="Recotext_container">
+        <h1>RECOMMENED</h1>
+    </div>
+
+    <div id="Reco_container">
+        <div class="Reco_inner"> <img src="/img/test1.jpg " ><h1>온차 녹차</h1><p>30,000원</p></div>
+        <div class="Reco_inner"> <img src="/img/test2.jpg " ><h1>온차 홍차</h1><p>28,000원</p></div>
+        <div class="Reco_inner"> <img src="/img/test1.jpg " ><h1>온차 녹차</h1> <p>30,000원</p></div>
+        <div class="Reco_inner"> <img src="/img/test2.jpg " ><h1>온차 홍차</h1><p>28,000원</p></div>
+        <div class="Reco_inner"> <img src="/img/test1.jpg " ><h1>온차 녹차</h1> <p>30,000원</p></div>
+        <div class="Reco_inner"> <img src="/img/test2.jpg " ><h1>온차 홍차</h1><p>28,000원</p></div>
+    </div>
+
+
+
+
+    <div id="Gifttext_container">
+        <h1>GIFT SET</h1>
+    </div>
+ 
+    <div id="gift">
+
+    <div class="Gift_box">
+    <ul id = "Gift_container">
+        <% for(var i = 0; i < data.length; i++) { %>
+        <a class=<%=data[i].index%> href="#"><li class ="Gift_inner"><img src="<%=data[i].image%>" ><h1><%=data[i].title%></h1><p><%=data[i].price%> 원</p></li></a>
+        <% } %>   
+    </li>
+    </ul>
+    </div>
+    <p class="controller">
+        <span class="prev">&lang;</span>
+        <span class="next">&rang;</span>
+        </p>
+    </div>
+
+    <div class = "ad_container">
+        <img src="/img/ad.jpg">
+        <h1>간단한 광고가 들어갈자리</h1>
+    </div>
+
+    <div class="slideShow_container">
+        <div class="slideFade">
+            <img class="resev_main" src="/img/neko1.jpg">
+            <img class="map" src="/img/neko-map.png">
+            <img class="resev_inner" src="/img/neko1.jpg">
+            <img class="resev_inner" src="/img/neko2.jpg">
+            <img class="resev_inner" src="/img/neko1.jpg">   
+        <div class="innre_info">
+            <h1>네꼬야 티하우스</h1>
+            <h2>10년, 20년 뒤에도 항상 지금처럼 반겨드리고픈 네꼬야 티하우스입니다. 
+                고급진 티웨어로 즐기는 다양한 홍차와 밀크티, 커피 등과 함께 여유로운 
+                티타임을 즐기세요</h2>
+        
+        </div>
+        </div>
+
+    </div>
+     <!--tail-->
+        <div id="coinfo-container">
+            <div class="coinfoinner">
+            <img src="/img/logo2.png">
+            <p>E-mail : oncha.minji@gmail.com</p>
+            <p>Copyright 2023 Oncha</p>
+            </div>
+            </div>
+    </div>
+
+
+    <script src="/js/ctr/Gift_Slide.js"></script>
+    <script src ="/js/home/index.js"></script>
+    <!-- 
+    -->
+</body>

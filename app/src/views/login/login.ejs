@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/home/login.css">
+    <script src="js/login/login.js"defer></script>
+    <title>OnchaLogin</title>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <style>
+      #google_login_btn {
+          background: url("/img/btn_google_signin_dark_normal_web@2x.png")
+              no-repeat;
+          background-size: 100% 100%;
+          cursor: pointer;
+          width: 200px;
+          height: 50px;
+      }
+  </style>
+
+
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+          <!--<form class="register-form">
+            <input type="text" placeholder="name"/>
+            <input type="password" placeholder="password"/>
+            <input type="text" placeholder="email address"/>
+            <button>create</button>
+            <p class="message">Already registered? <a href="#">Sign In</a></p>
+          </form>-->
+          <form class="login-form">
+            <input id ="id" type="text" placeholder="아이디"/>
+            <input id ="password" type="password" placeholder="비밀번호"/>
+            <p id ="button">login</p>
+            <p class="message">Not registered? <a href="/register">Create an account</a></p>
+          </form>
+
+          <form method="GET" action="/auth/google">
+            <input id="google_login_btn" type="submit" name="" value="" style="background-color:transparent;  border:0px transparent solid;"/>
+        </form>
+        </div>
+      </div>
+</body>
+
+</html>
+
+<!--Copyright (c) 2023 by Aigars Silkalns (https://codepen.io/colorlib/pen/rxddKy)-->

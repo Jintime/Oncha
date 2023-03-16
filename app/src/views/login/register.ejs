@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home/login.css">
+    <script src="js/login/register.js"defer></script>
+    <title>OnchaLogin</title>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script>
+      function openZipSearch() {
+          new daum.Postcode({
+            oncomplete: function(data) {
+              document.querySelector("#zip").value = data.zonecode;
+              document.querySelector("#addr1").value =  data.address;
+            }
+          }).open();
+        }
+        </script>
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+          <!--<form class="register-form">
+            <input type="text" placeholder="name"/>
+            <input type="password" placeholder="password"/>
+            <input type="text" placeholder="email address"/>
+            <button>create</button>
+            <p class="message">Already registered? <a href="#">Sign In</a></p>
+          </form>-->
+          <form class="login-form">
+            <input id ="id" type="text" placeholder="아이디"/>
+            <input id ="name" type="text" placeholder="이름"/>
+            <input id ="email" type="email" placeholder="이메일"/>
+            <input id ="password" type="password" placeholder="비밀번호"/>
+            <input id ="confirm-password" type="password" placeholder="비밀번호확인"/>
+            <input id="phon_number" type="text" placeholder="전화번호"/>
+            <input type="text" id="zip" style="width:200px; height:50px;" placeholder="우편번호" />
+            <button type="button" style="width:60px; height:50px;" onclick="openZipSearch()">검색</button><br>
+            <input type="text" id="addr1" style="width:270px; height:50px;" readonly placeholder="주소"/><br>
+            <input type="text" id="addr2" style="width:270px; height:50px;" placeholder="상세" />
+
+            <p id="button">SIGN UP</p>
+            <p class="message">Already registered? <a href="/login">Login</a></p>
+          </form>
+        </div>
+
+      </div>
+</body>
+
+
+
+
+
+</html>
+
+<!--Copyright (c) 2023 by Aigars Silkalns (https://codepen.io/colorlib/pen/rxddKy)-->
